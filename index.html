@@ -3,13 +3,26 @@
    <head>
     <meta charset="UTF-8">
     <title>MEOW</title>
+
+    <style>
+       body {
+ background-image:url(grafiki/glitter.jpg);
+        }
+        p {
+            color:aliceblue
+        }
+    </style>
    </head>
 
-   <body style="background-image:url(grafiki/glitter.jpg);"></body> 
+   <body>
     <header style="background-color:pink; height:60px ; color:white; padding: 20px;">
 
         <p style="text-align:center ; "> meow meow meow</p>
     </header>
+
+    <nav>
+        <a href="strona1.html">herbatka</a>
+    </nav>
 <!-- <p>nie chcę tu być
     ctrl + slash dla komentarza 
 </p> -->
@@ -23,14 +36,17 @@
  najlepiej styl czcionki dodać na początku np body, żebyy wszystkie elementy miały wtedy tą samą czcionkę. Albo można stwozyc div (kontener na elementy) i w nim dodawać różne style
 style="boarder;5px dotted blue;" -> dodaje ramkę do danego elemntu
 
+zazwyczaj kod css piszemy używając { takich ramek } żeby powiedziec coś o większej sekcji dokumentpadding to wewnetrzna zmiana odległosci 
 
+.link:hover{styl podpięty do linku po najechaniu kursorem
+transition-duration:3s;  czyli tranzycja z jednej warjacji stylu do drugiej}
 
  -->
 <p style="font-size:40px; color:rgb(253, 226, 240);"> Ale bym wypiła teraz herbatkę</p>
 <p style="font: size 50px;color:aliceblue ">HERBATKAAAA</p>
 <div style="border-radius: 5px pink;">
     <img style="align-items: center;width:30%;" src="grafiki/kot.jpg">
-    <p>pink</p>
+    <p style="color:rgb(248, 185, 195)">pink</p>
 </div>
 <footer style="background-color:rgb(255, 131, 152) ;height:60px; color: antiquewhite;padding:20px">
     <p style="text-align:center;"> meow meow meowww moewo meow meow meow</p>
