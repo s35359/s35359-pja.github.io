@@ -13,33 +13,55 @@
 
  <header>
   <div > <nav>
+    <img class="footer-img" src="grafiki/dream model kopia2.svg">
+    <div class="nav-links">
     <a href="index.html" >DTM Home</a>
     <a href="Models.html" >Models</a>
     <a href="brands.html" >Brands</a>
+    </div>
   </nav></div>
  </header>
 
- 
+
+ <div class="form-layout">
    <h1 class="form-text">Casting Form</h1>
-   <form action="form-submit.html" target="_blank">
-     <h2 class="form-text">General Informations</h2>
-     <div class="form"></div>
-      <input required id="fname" type="text" placeholder="name*" > <input required id="lname" type="text" placeholder="surname*" > 
-      <input required id="gender" type="checkbox" placeholder="gender" > <label for="gender">Female</label> <label for="gender">Male</label> 
-      <br>
-      <input required id="email" type="text" placeholder="email*" > <input required id="phone" type="text" placeholder="phone*" > <input required id="city" type="text" placeholder="city" > <input required id="country" type="text" placeholder="country">
-      <br>
-      <h2 class="form-text">Mesaurements</h2><p>in centimeters</p>
-      <input required id="height" type="text" placeholder="height*" > <input required id="waist" type="text" placeholder="waist*" > <input required id="bust" type="text" placeholder="bust*" > <input required id="hips" type="text" placeholder="hips*" >
-      <br>
+   <form action="form-submit.html" target="_blank" class="form">
+     <h2 class="form-text" >General Informations</h2>
+      <input required  type="text" placeholder="Name*" >
+      <input required  type="text" placeholder="Surname*" > 
+       
+      <div class="gender-box">
+      <label><input type="radio" name="gender">Female</label>
+      <label><input type="radio" name="gender">Male</label> 
+      </div>
+
+      <input required  type="text" placeholder="email*" > 
+      <input required type="text" placeholder="phone*" > 
+      <input required  type="text" placeholder="city" > 
+      <input required  type="text" placeholder="country">
+       
+      <h2 class="form-text">Mesaurements</h2>
+      <p class="measaure-text">in centimeters</p>
+      <input required  type="text" placeholder="height*" > 
+      <input required  type="text" placeholder="waist*" > 
+      <input required  type="text" placeholder="bust*" > 
+      <input required  type="text" placeholder="hips*" >
+       
       <button type="submit">Submit Form</button>
-     </div>
    </form>
+  </div>
+
+
+
+   
   
 
 
  <footer>
-  <p>Natalia Styńska s35359 </p>
+    <div class="footer">
+        <img class="footer-img" src="grafiki/dream model.svg">
+       <p>Natalia Styńska s35359 </p>
+   </div>
  </footer>
 
 </body>
