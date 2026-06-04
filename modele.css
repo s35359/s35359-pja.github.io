@@ -4,24 +4,58 @@
     box-sizing: border-box;
 }
 
+ a nav {
+  text-decoration: none;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  animation-duration: 0.9s;}
+    a nav:hover {
+  animation-name: pulse79;
+  animation-iteration-count: infinite;
+ }
+
+
+ @keyframes pulse79 {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.07); }
+  100% { transform: scale(1); }
+ }
+ 
 /* nawigacja */
 nav {
-  background-color: #374039; color: #f0f2f1;
-  display: flex;
-  justify-content:flex-start;
-  align-items: center;
+    font-family: 'Century', 'Lucida Sans';
+    font-size: 22px;
+    background-color: #374039; color: #f0f2f1;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
 
-  padding: 20px 40px;
-  width:100%;
+    padding: 20px 40px;
+    width:100%;
 
-  a:link, a:visited{ color: #f0f2f1; text-decoration: none;}
-  a:hover{text-decoration:line-through; text-decoration-color: #252525; text-decoration-thickness:3px;}
-  a:active{color: #dadddb; text-decoration: none;}
-}
+    a:link, a:visited{ color: #f0f2f1; text-decoration: none;}
+    a:active{color: #dadddb; text-decoration: none;}
+    a {
+  text-decoration: none;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  animation-duration: 0.9s;}
+    a:hover {
+  animation-name: pulse79;
+  animation-iteration-count: infinite;
+ }
+
+
+ @keyframes pulse79 {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.07); }
+  100% { transform: scale(1); }
+ }
+  }
 
 .nav-links{
-  display: flex;
-  gap: 40px;
+    display: flex;
+    gap: 40px;
 }
 nav h1{
   align-items: flex-start;
@@ -30,37 +64,37 @@ nav h1{
 
 
 body{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:#25190E;
-  text-align: center;
-  background-color: #f0f2f1; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:#25190E;
+    text-align: center;
+    background-color: #f0f2f1; 
 }
 
 h1{ 
-text-transform: uppercase;
-padding-top: 40px;
-font-size: 60px;
-text-align: left;
-margin-left: 310px;
-padding-bottom: 60px;
+    text-transform: uppercase;
+    padding-top: 40px;
+    font-size: 60px;
+    text-align: left;
+    margin-left: 310px;
+    padding-bottom: 60px;
 }
 
 .category-area{
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    display: flex;
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 1.5rem;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    margin-left: 310px;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 1.5rem;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        margin-left: 310px;
 }
 
 
 .category-bar{
-    display: block;
-    unicode-bidi: isolate;
+        display: block;
+        unicode-bidi: isolate;
 
 }
 
@@ -87,9 +121,9 @@ padding-bottom: 60px;
 }
 
 .model p{
-font-size: 23px; 
-margin-top: 10px;
-text-align: left;
+    font-size: 23px; 
+    margin-top: 10px;
+    text-align: left;
 }
 
 .photo{
@@ -117,7 +151,6 @@ text-align: left;
     z-index: 1;
 }
 
-/* ukryte zdjęcia */
 .img2,
 .img3 {
     opacity: 0;

@@ -7,15 +7,30 @@ body {
 
 /* kolory linków + animacja */
 a:link, a:visited{ color: #374039; text-decoration: none;}
-a:hover{text-decoration:line-through; text-decoration-color: #252525; text-decoration-thickness:3px;}
 a:active{color: #b2b6b3; text-decoration: none;}
-
-header{
-
+ a {
+  text-decoration: none;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  animation-duration: 0.9s;
 }
+
+a:hover {
+  animation-name: hover-link;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hover-link {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.07); }
+  100% { transform: scale(1); }
+}
+
 
 /* nawigacja */
 nav {
+  font-family: 'Century', 'Lucida Sans';
+  font-size: 22px;
   background-color: #374039; color: #f0f2f1;
   display: flex;
   justify-content:flex-start;
@@ -25,7 +40,6 @@ nav {
   width:100%;
 
   a:link, a:visited{ color: #f0f2f1; text-decoration: none;}
-  a:hover{text-decoration:line-through; text-decoration-color: #252525; text-decoration-thickness:3px;}
   a:active{color: #dadddb; text-decoration: none;}
 }
 
@@ -114,26 +128,25 @@ grid-column: 1/-1;
     background-color: #252525;
 }
 
-
-
-
-/* animacja HTML: <div class="loader"></div> */
-.loader {
-  width:auto;
-  height: 20px;
-  background: 
-    linear-gradient(90deg,#0001 33%,#0005 50%,#0001 66%)
-    #f2f2f2;
-  background-size:300% 100%;
-  animation: l1 4s infinite linear;
+/* form submit strona*/
+.submit{
+  padding: 300px 20px;
 }
-@keyframes l1 {
-  0% {background-position: right}
+
+.submit2{
+padding: 250px 20px;
 }
+
+.submit-text{
+  justify-items: center;
+}
+
+
 
 /* footer */
 footer{
-  padding:30px, 40px;
+  position: fixed;
+  bottom: 0;
 }
 
 .footer{
@@ -144,4 +157,56 @@ footer{
 .footer-img{
   height: auto;
   width: 190px;
+}
+
+
+
+
+/* animacja HTML*/
+.kropki-animacja {
+  width: 200px;
+  height: 60px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #374039;
+  left: 15%;
+  transform-origin: 50%;
+  animation: circle7124 .5s alternate infinite ease;
+}
+
+@keyframes circle7124 {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
+  }
+
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+
+  100% {
+    top: 0%;
+  }
+}
+
+.circle:nth-child(2) {
+  left: 45%;
+  animation-delay: .2s;
+}
+
+.circle:nth-child(3) {
+  left: auto;
+  right: 15%;
+  animation-delay: .3s;
 }
