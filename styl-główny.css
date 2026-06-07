@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:#25190E;
+  font-family: 'Century', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:#25190E;
   margin-inline:100px;
   margin-top:20px;
   background-color: #f0f2f1;
@@ -52,72 +52,258 @@ nav h1{
   font-size: 30px;
 }
 
+  .devider{
+     width:100%;
+    height:1px;
+    background:#ddd;
+    margin:70px 0;
+  }
+
 h1{
   text-align: center;
   margin-top: 66px;
-  font-size: 60px;
+ font-size:5rem;
+  font-weight:100;
+  letter-spacing:2px
 }
 
-
-/*  forms */
-.form-layout{
- padding: 60px 20px;
+p{
+   line-height: 2;
+    font-size: 1.05rem;
 }
+
+h2{
+  font-size:1.8rem;
+  font-weight: 100;
+    font-style:italic;
+    text-align: center;
+}
+
+/* strona główna*/
+.about-team{
+    max-width:1200px;
+    margin:auto;
+    padding:100px 40px;
+  }
+
+  .title{
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Century', 'Lucida Sans'; 
+  }
+
+  .title span{
+    letter-spacing: 6px;
+  }
+  .title h1{
+    font-size:5rem;
+    font-weight:200;
+    letter-spacing:9px;
+   
+  }
+
+  .about-us{
+    display: flex;
+    gap: 80px;
+  }
+
+  .about-left{
+    width: 25%;
+  }
+
+  .about-left h2{
+    font-size:3rem;
+    font-weight:300;
+    letter-spacing:2px;
+  }
+
+  .about-right{
+    width: 75%;
+  }
+
+  .about-right p{
+    line-height: 2;
+    font-size: 1.05rem;
+  }
+
+  blockquote{
+    margin-top:40px;
+    font-size:1.8rem;
+    font-style:italic;
+    text-align: center;
+  }
+
+  .team{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
+  }
+
+  .team img{
+    width: 45%;
+    display:block;
+    border-radius: 10px;
+  }
+
+  .member{
+    padding:25px 0;
+    border-bottom:1px solid #ddd;
+  }
+
+  .member h3{
+    margin:0;
+    font-size:2rem;
+    font-weight:400;
+    letter-spacing:4px;
+    text-transform:uppercase;
+  }
+
+  .member span{
+      color:#666;
+      letter-spacing:2px;
+    }
+
+    .stats{
+    display:flex;
+    justify-content:space-around;
+    text-align:center;
+  }
+
+  .stat h3{
+      font-size:4rem;
+      font-weight:200;
+      margin:0;
+  }
+
+  .stat p{
+      text-transform:uppercase;
+      letter-spacing:3px;
+      color:#666;
+    }
+
+    .contact{
+      text-align: center;
+    margin-bottom: 60px;
+    }
+
+    .contact h2{
+      font-size:3rem;
+    font-weight:300;
+    letter-spacing:2px;
+    margin-top: 25px;
+    }
+
+    .contact-items{
+      display:flex;
+    justify-content:space-evenly;
+    text-align:center;
+    }
+
+    .contact-item{
+      letter-spacing: 2px;
+    }
+
+    .contact-item p{
+      color: #666;
+    }
+      
+  /*  forms */
+  .casting-layout{
+    max-width:1400px;
+    margin:auto;
+    padding: 100px 30px;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+
+    align-items:stretch;
+}
+
+.casting-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display: block;
+    opacity: 50%;
+}
+
+  .form-layout{
+   max-width:1200px;
+    margin:auto;
+    padding:0;
+    text-align: center;
+   }
+
+   .form-layout h1{
+    text-align:center;
+    font-size:4rem;
+    font-weight:300;
+    letter-spacing:10px;
+    margin-bottom:60px;
+   }
 
 .form{
-   max-width: 700px;
-    margin: auto;
+    padding:60px;
+    border:1px solid #666;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    justify-items: center;
+    gap: 25px;
+    
+}
+
+.form-h2{
+  grid-column:1/-1;
+    font-size:2rem;
+    font-weight:300;
+    letter-spacing:4px;
+    margin-top:20px;
+    margin-bottom:10px;
 }
 
 .form input{
-  width:300px;
+   width:100%;
+    box-sizing:border-box;
 
-    padding: 14px;
-    border: 1px solid #ccc;
-    font-size: 16px;
+    padding:18px;
+    border:none;
+    border-bottom:1px solid #ccc;
+
+    background:transparent;
+    font-size:16px;
 }
+
 
 .gender-box{
     grid-column: 1 / -1;
     display: flex;
-    gap: 30px;
+    gap: 40px;
     justify-content: center;
+    padding: 15px 0;
 }
 
 .gender-box label{
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.form-text{
-box-sizing: border-box;
-display: block;
-    unicode-bidi: isolate;
-text-align: center;
-grid-column: 1/-1;
+  letter-spacing:2px;
+    text-transform:uppercase;
 }
 
 .measaure-text{
   grid-column: 1 / -1;
-    text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    margin-top: -10px;
 }
 
 .form button{
     grid-column: 1 / -1;
 
-    padding: 15px;
+    padding: 18px;
     border: none;
-    margin-top: 13px;
+    margin-top: 40px;
     background-color: #374039;
     color: white;
-
+ letter-spacing: 3px;
     font-size: 16px;
     cursor: pointer;
 
@@ -129,23 +315,74 @@ grid-column: 1/-1;
 }
 
 /* form submit strona*/
-.submit{
-  padding: 300px 20px;
+.submit-strona{
+ min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    padding: 100 px 40px;
 }
 
-.submit2{
-padding: 250px 20px;
+.submit-wypełnienie{
+  border:1px solid #666;
+    max-width:900px;
+    width:100%;
+
+    text-align:center;
+
+    padding:80px 60px;
 }
 
-.submit-text{
-  justify-items: center;
+.submit-cos h1{
+    font-size:3.5rem;
+    font-weight:300;
+    letter-spacing:6px;
+
+    margin-bottom:40px;
 }
 
+.submit-cos h2{
+    font-size:1.3rem;
+    font-weight:300;
 
+    line-height:1.8;
+
+    margin-bottom:15px;
+}
+
+.submit-cos h3{
+    margin-top:50px;
+
+    color:#666;
+    font-weight:300;
+
+    letter-spacing:1px;
+}
+
+/*ERROR strona*/
+.error{
+    min-height:80vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+.error h1{
+  font-size: 6rem;
+  font-weight: 200;
+  letter-spacing: 12px;
+}
+
+.error-text a:hover{
+    opacity:0.6;
+}
 
 /* footer */
 footer{
-  position: fixed;
   bottom: 0;
 }
 
@@ -210,3 +447,7 @@ footer{
   right: 15%;
   animation-delay: .3s;
 }
+
+
+
+
