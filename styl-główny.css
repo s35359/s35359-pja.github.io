@@ -8,7 +8,7 @@ body {
 /* kolory linków + animacja */
 a:link, a:visited{ color: #374039; text-decoration: none;}
 a:active{color: #b2b6b3; text-decoration: none;}
- a {
+a {
   text-decoration: none;
   position: relative;
   transition: all 0.5s ease-in-out;
@@ -326,7 +326,7 @@ svg{
    display: flex;
    justify-content: center;
    align-items: center;
-    padding: 100 px 40px;
+    padding: 100px 40px;
 }
 
 .submit-wypełnienie{
